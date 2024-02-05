@@ -11,6 +11,7 @@ dj-database-url = "~=0.5"
 psycopg2 = "~=2.9"
 django-summernote = "~=0.8.20.0"
 whitenoise = "~=5.3.0"
+django-allauth = "~=0.57.0"
 
 [dev-packages]
 
