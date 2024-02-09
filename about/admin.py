@@ -6,7 +6,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(About)
 class AboutAdmin(SummernoteModelAdmin):
-
+    """
+    Adds rich-text editing of content in admin
+    """
     list_display = ('title', 'updated_on')
     summernote_fields = ('body',)
 
@@ -19,5 +21,7 @@ class AboutAdmin(SummernoteModelAdmin):
 
 @admin.register(CollaborateRequest)
 class CollaborateRequestAdmin(admin.ModelAdmin):
-
+    """
+    Lists message and read fields for display in admin
+    """
     list_display = ('message', 'read',)
